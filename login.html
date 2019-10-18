@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>َLogin Form</title>
+    <link rel="stylesheet" href="logs.css">
+  </head>
+  <body>
+<div class="header">
+
+        <div class="navbar">
+            <ul>
+               <a href="index.html"><li>Home</li> </a>
+               <a href="service.html"> <li>About Us</li></a>
+               <a href="faq.html"><li>FAQ</li></a>
+                <a href="formtest.html"> <li>Sign up</li></a>
+             <a href="contact.html"><li>Contact Us</li></a>
+            </ul>
+        </div>
+      </header>
+    <br>
+
+
+<form class="box"onsubmit="return fn()" action="dashboard1.html">
+  <h1>Login</h1>
+  <input type="text" name="" placeholder="Username" id="uname">
+  <input type="password" name="" placeholder="Password" id="pass">
+  <button id="btn" type="submit" value="Login" >Login </button>
+</form>
+
+<script>
+
+  function fn(){
+
+
+var un=document.getElementById("uname").value;
+var pa=document.getElementById("pass").value;
+
+if(un=="")
+{
+  alert("Enter username");
+  return false;
+}
+
+else if(pa=="")
+  {alert("Enter password");
+  return false;
+  }
+
+else if(un=="jatin" || un=="sahil")
+{
+  return true;
+
+ }
+
+else
+{
+  alert("Incorrect Username Or Password");
+return false;
+
+}
+
+
+  }
+</script>
+  </body>
+</html>
